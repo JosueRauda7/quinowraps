@@ -33,6 +33,7 @@ export default function Recipes() {
     const recipe = await axios.post(`${import.meta.env.VITE_API_URL}/recipes/suggestion`, {
       ingredients
     });
+    setUrlImage('');
     // const unsplashAccessKey = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;
     // const unsplashResponse = await axios.get(`https://api.unsplash.com/search/photos?query=${recipe.data.data.recipeNameInEnglish}`, {
     //   headers: {

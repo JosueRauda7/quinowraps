@@ -33,13 +33,13 @@ export default function Recipes() {
     const recipe = await axios.post(`${import.meta.env.VITE_API_URL}/recipes/suggestion`, {
       ingredients
     });
-    const unsplashAccessKey = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;
-    const unsplashResponse = await axios.get(`https://api.unsplash.com/search/photos?query=${recipe.data.data.recipeNameInEnglish}`, {
-      headers: {
-        Authorization: `Client-ID ${unsplashAccessKey}`,
-      }
-    });
-    setUrlImage(unsplashResponse.data.results[0]?.urls?.regular);
+    // const unsplashAccessKey = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;
+    // const unsplashResponse = await axios.get(`https://api.unsplash.com/search/photos?query=${recipe.data.data.recipeNameInEnglish}`, {
+    //   headers: {
+    //     Authorization: `Client-ID ${unsplashAccessKey}`,
+    //   }
+    // });
+    // setUrlImage(unsplashResponse.data.results[0]?.urls?.regular);
     setRecipeName(recipe.data.data.recipeName);
     setRecipeContent(recipe.data.data.recipeHtml);
     setLoading(false);

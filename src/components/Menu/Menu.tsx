@@ -7,7 +7,7 @@ interface PropsItemMenu {
 
 function MenuItem({to, children}: PropsItemMenu) {
   return (
-    <li className="p-2 font-semibold text-white hover:bg-green-950 rounded cursor-pointer">
+    <li className="p-2 font-semibold text-white hover:bg-green-950 active:bg-green-950 rounded cursor-pointer">
       <Link to={to}>{children}</Link>
     </li>
   );

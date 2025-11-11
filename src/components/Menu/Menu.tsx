@@ -19,7 +19,10 @@ export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
+    <div style={{
+      position: 'sticky',
+      top: 0
+    }}>
       <nav className="flex items-center w-full bg-green-900 sticky">
         <div className="sm:p-2 md:p-4">
           <Link to="/">
@@ -61,6 +64,6 @@ export default function Menu() {
         <MenuItem onClick={() => setIsOpen(false)} to="/">Inicio</MenuItem>
         <MenuItem onClick={() => setIsOpen(false)} to="/recipes">Recetas</MenuItem>
       </ul>)}
-    </>
+    </div>
   );
 }

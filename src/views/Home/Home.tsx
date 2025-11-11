@@ -24,7 +24,7 @@ export default function Home() {
         <div className="md:flex md:flex-3 md:flex-col md:justify-center p-4 md:pl-10 md:pr-10">
           <h1 className="text-2xl md:text-4xl font-bold text-green-950">¿Qué son las Quinowraps?</h1>
           <p className="text-sm md:text-lg m-2 w-full md:w-2xl">Tortillas elaboradas a base de quinoa, matcha y harina de arroz, libres de gluten y con un perfil nutricional mejorado, diseñadas para consumidores que buscan opciones más saludables y funcionales en su alimentación diaria.</p>
-          <h1 className="text-2xl md:text-4xl font-bold text-green-950">Una alternativa deliciosa para personas celíacas</h1>
+          <h1 className="text-2xl md:text-4xl font-bold text-green-950">Una alternativa deliciosa para personas celíacas, con sensibilidad e intolerancia al gluten</h1>
           <p className="text-sm md:text-lg m-2">Destinada para aquellas  personas que padecen la enfermedad celíaca, una afección autoinmune que les impide tolerar el gluten.</p>
         </div>
       </div>

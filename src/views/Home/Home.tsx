@@ -9,30 +9,28 @@ export default function Home() {
   return (
     <>
       <div className='landing-header'>
-        <div className="background-opacity">
-          <h1 className="text-8xl font-bold text-white">Descubre las Quinowraps</h1>
-          <h2 className="text-4xl text-white">Vivir saludable es fácil y delicioso. Libres de glúten hechos a base de quinoa y matcha.</h2>
-          <button className="bg-white text-black font-bold py-2 px-4 rounded mt-4"><Link to='/recipes'>¡Descubre una receta con Quinowraps!</Link></button>
+        <div className="background-opacity h-full">
+          <h1 className="text-4xl md:text-8xl font-bold text-white">Descubre las Quinowraps</h1>
+          <h2 className="text-lg mt-4 md:text-4xl text-white">Vivir saludable es fácil y delicioso. Libres de glúten hechos a base de quinoa y matcha.</h2>
+          <button className="bg-white text-black font-bold py-2 px-4 rounded mt-4 hover:bg-green-900 active:bg-green-900"><Link to='/recipes'>¡Descubre una receta con Quinowraps!</Link></button>
         </div>
       </div>
-      <div className="flex">
-        <div>
+      <div className="md:flex w-full">
+        <div className="hidden md:block">
           <img
             className="w-xl"
             src={Quinowrap} alt="Imagen de Quinowrap" />
         </div>
-        <div className="flex flex-col justify-center p-4 pl-10 pr-10">
-          <h1 className="text-5xl font-bold text-green-950">¿Qué son las Quinowraps?</h1>
-          <p className="text-xl m-2 w-2xl">Tortillas elaboradas a base de quinoa, matcha y harina de arroz, libres de gluten y con un perfil nutricional mejorado, diseñadas para consumidores que buscan opciones más saludables y funcionales en su alimentación diaria.</p>
-          <div>
-            <h1 className="text-4xl font-bold text-green-950">Una alternativa deliciosa para personas celíacas</h1>
-            <p className="text-xl m-2 w-2xl">Destinada para aquellas  personas que padecen la enfermedad celíaca, una afección autoinmune que les impide tolerar el gluten.</p>
-          </div>
+        <div className="md:flex md:flex-col md:justify-center p-4 md:pl-10 md:pr-10">
+          <h1 className="text-2xl md:text-5xl font-bold text-green-950">¿Qué son las Quinowraps?</h1>
+          <p className="text-sm md:text-xl m-2 w-full md:w-2xl">Tortillas elaboradas a base de quinoa, matcha y harina de arroz, libres de gluten y con un perfil nutricional mejorado, diseñadas para consumidores que buscan opciones más saludables y funcionales en su alimentación diaria.</p>
+          <h1 className="text-2xl md:text-4xl font-bold text-green-950">Una alternativa deliciosa para personas celíacas</h1>
+          <p className="text-sm md:text-xl m-2">Destinada para aquellas  personas que padecen la enfermedad celíaca, una afección autoinmune que les impide tolerar el gluten.</p>
         </div>
       </div>
       <div className="landing-ingredients">
-        <h1 className="text-5xl font-bold text-white pl-5 pr-5">Hecho con ingredientes de calidad</h1>
-        <div className="flex flex-3 mt-6 gap-3 p-5">
+        <h1 className="text-3xl md:text-5xl font-bold text-white pl-5 pr-5">Hecho con ingredientes de calidad</h1>
+        <div className="flex flex-wrap flex-3 mt-6 gap-3 p-5">
           <div className="flex-1 bg-green-950 rounded-2xl">
             <img className="w-2xl rounded-t-2xl" src={Quinoa} alt="Quinoa" />
             <p className="text-3xl p-4 text-white"><span className="font-bold">1. Quinoa:</span> Rica en proteínas y aminoácidos esenciales.</p>

@@ -55,12 +55,12 @@ export default function Recipes() {
       <div className="mt-4">
         <input
           type="text"
-          className="mb-4 w-lg p-2 border border-green-900 rounded bg-green-900 text-white outline-none"
+          className="mb-4 w-full md:w-lg p-2 border border-green-900 rounded bg-green-900 text-white outline-none"
           placeholder="Agregar ingrediente"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
         />
-        <button onClick={() => handleAddIngredient(inputValue)} className="bg-green-950 text-white p-2 rounded ml-2 w-44 cursor-pointer outline-none">Agregar</button>
+        <button onClick={() => handleAddIngredient(inputValue)} className="bg-green-950 text-white p-2 rounded md:ml-2 w-full md:w-44 cursor-pointer outline-none">Agregar</button>
         <br />
         <h2 className="font-semibold text-2xl text-green-950 mt-2">Ingredientes agregados:</h2>
         <br />
@@ -72,7 +72,7 @@ export default function Recipes() {
           ))}
           {ingredients.length === 0 && (<p className="text-black">No hay ingredientes agregados.</p>)}
         </div>
-        <button onClick={handleGetRecipe} className="bg-green-950 text-white p-2 rounded cursor-pointer outline-none mt-4 font-bold w-lg">Obtener receta</button>
+        <button onClick={handleGetRecipe} className="bg-green-950 text-white p-2 rounded cursor-pointer outline-none mt-4 font-bold w-full md:w-lg">Obtener receta</button>
         {loading && <Spinner />}
         {recipeContent.length > 0 && (
           <>

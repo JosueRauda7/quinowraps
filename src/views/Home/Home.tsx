@@ -4,6 +4,7 @@ import Quinowrap from "./quinowrap-empaque.jpg";
 import Quinoa from "./quinoa.webp";
 import Matcha from './matcha.jpg'
 import HarinaArroz from './harina-arroz.jpeg'
+import PersonEatQuinowrap from './person-quinowrap.jpg'
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <div className='landing-header'>
         <div className="background-opacity h-full">
           <h1 className="text-4xl md:text-8xl font-bold text-white">Descubre las Quinowraps</h1>
-          <h2 className="text-lg mt-4 md:text-4xl text-white">Vivir saludable es fácil y delicioso. Libres de glúten hechos a base de quinoa y matcha.</h2>
+          <h2 className="text-lg mt-4 md:text-4xl text-white">Vivir saludable es fácil y delicioso. Libres de gluten hechos a base de quinoa y matcha.</h2>
           <button className="bg-white text-black font-bold py-2 px-4 rounded mt-4 hover:bg-green-900 active:bg-green-900"><Link to='/recipes'>¡Descubre una receta con Quinowraps!</Link></button>
         </div>
       </div>
@@ -43,6 +44,27 @@ export default function Home() {
             <img className="w-2xl rounded-t-2xl" src={HarinaArroz} alt="Harina de Arroz" />
             <p className="text-lg md:text-2xl p-4 text-white"><span className="font-bold">3. Harina de arroz:</span> Buena fuente de carbohidratos completos, es rica en vitamina B, hierro y magnesio, es de fácil digestión.</p>
           </div>
+        </div>
+      </div>
+      <div className="md:flex md:flex-5 w-full">
+        <div className="md:flex md:flex-3 md:flex-col md:justify-center p-4 md:pl-10 md:pr-10">
+          <h1 className="text-2xl md:text-4xl font-bold text-green-950">¿Qué es el gluten?</h1>
+          <p className="text-sm md:text-lg m-2 w-full md:w-2xl">El gluten es una proteína presente en cereales como el trigo, cebada, centeno y sus derivados.</p>
+          <p className="text-sm md:text-lg m-2 w-full md:w-2xl">En personas con enfermedad celíaca, el consumo de gluten daña el intestino delgado y puede causar deficiencias nutricionales.</p>
+          <p className="text-sm md:text-lg m-2 w-full md:w-2xl">En personas con sensibilidad al gluten no celíaca, puede generar malestar digestivo, fatiga y dolor de cabeza sin dañar el intestino.</p>
+          <h1 className="text-2xl md:text-4xl font-bold text-green-950">Consejos para tí</h1>
+          <p className="text-sm md:text-lg m-2"><strong>1. Lee las etiquetas:</strong> Evita trigo, cebada, centeno y busca productos con “sin gluten”.</p>
+          <p className="text-sm md:text-lg m-2"><strong>2. Evita la contaminación cruzada:</strong> Usa utensilios y superficies separadas.</p>
+          <p className="text-sm md:text-lg m-2"><strong>3. Come natural:</strong> Frutas, verduras, carnes, legumbres, arroz, maíz, quinoa.</p>
+          <p className="text-sm md:text-lg m-2"><strong>4. Consulta al médico o nutricionista</strong> para un diagnóstico y dieta equilibrada.</p>
+          <p className="text-sm md:text-lg m-2"><strong>5. Cuida al comer fuera:</strong> Pregunta si el lugar ofrece opciones seguras sin gluten.</p>
+          <p className="text-sm md:text-lg m-2"><strong>6. Explora nuevas opciones saludables,</strong> como productos con quinoa y matcha.</p>
+          <p className="text-sm md:text-lg m-2"><strong>7. Busca apoyo:</strong> Únete a asociaciones o grupos de personas celíacas.</p>
+        </div>
+        <div className="hidden md:flex md:flex-2">
+          <img
+            className="w-full h-auto object-cover"
+            src={PersonEatQuinowrap} alt="Imagen de persona comiendo una Quinowrap" />
         </div>
       </div>
       <div className="bg-green-950 text-white text-center p-10">

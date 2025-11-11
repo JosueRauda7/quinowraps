@@ -28,20 +28,20 @@ export default function Home() {
           <p className="text-sm md:text-xl m-2">Destinada para aquellas  personas que padecen la enfermedad celíaca, una afección autoinmune que les impide tolerar el gluten.</p>
         </div>
       </div>
-      <div className="landing-ingredients">
-        <h1 className="text-3xl md:text-5xl font-bold text-white pl-5 pr-5">Hecho con ingredientes de calidad</h1>
-        <div className="flex flex-wrap flex-3 mt-6 gap-3 p-5">
-          <div className="flex-1 bg-green-950 rounded-2xl">
+      <div className="landing-ingredients p-10">
+        <h1 className="text-4xl md:text-5xl font-bold text-white md:pl-5 md:pr-5">Hecho con ingredientes de calidad</h1>
+        <div className="flex flex-wrap flex-3 mt-6 gap-3 md:p-5">
+          <div className="block md:flex-1 bg-green-950 rounded-2xl">
             <img className="w-2xl rounded-t-2xl" src={Quinoa} alt="Quinoa" />
-            <p className="text-3xl p-4 text-white"><span className="font-bold">1. Quinoa:</span> Rica en proteínas y aminoácidos esenciales.</p>
+            <p className="text-lg md:text-3xl p-4 text-white"><span className="font-bold">1. Quinoa:</span> Rica en proteínas y aminoácidos esenciales.</p>
           </div>
-          <div className="flex-1 bg-green-950 rounded-2xl">
+          <div className="block md:flex-1 bg-green-950 rounded-2xl">
             <img className="w-2xl rounded-t-2xl" src={Matcha} alt="Matcha" />
-            <p className="text-3xl p-4 text-white"><span className="font-bold">2. Matcha:</span> Un superalimento lleno de antioxidantes.</p>
+            <p className="text-lg md:text-3xl p-4 text-white"><span className="font-bold">2. Matcha:</span> Un superalimento lleno de antioxidantes.</p>
           </div>
-          <div className="flex-1 bg-green-950 rounded-2xl">
+          <div className="block md:flex-1 bg-green-950 rounded-2xl">
             <img className="w-2xl rounded-t-2xl" src={HarinaArroz} alt="Harina de Arroz" />
-            <p className="text-3xl p-4 text-white"><span className="font-bold">3. Harina de arroz:</span> Buena fuente de carbohidratos completos, es rica en vitamina B, hierro y magnesio, es de fácil digestión.</p>
+            <p className="text-lg md:text-3xl p-4 text-white"><span className="font-bold">3. Harina de arroz:</span> Buena fuente de carbohidratos completos, es rica en vitamina B, hierro y magnesio, es de fácil digestión.</p>
           </div>
         </div>
       </div>

@@ -10,6 +10,12 @@ export default function Recipes() {
   const [recipeContent, setRecipeContent] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleAddIngredient(inputValue);
+    }
+  }
+
   const handleAddIngredient = (ingredient: string) => {
     if (ingredients.includes(ingredient) || ingredient.trim() === ''){
       setInputValue('');
@@ -58,6 +64,7 @@ export default function Recipes() {
           className="mb-4 w-full md:w-lg p-2 border border-green-900 rounded bg-green-900 text-white outline-none"
           placeholder="Agregar ingrediente"
           value={inputValue}
+          onKeyDown={(e) => handleKeyDown(e)}
           onChange={(e) => setInputValue(e.target.value)}
         />
         <button onClick={() => handleAddIngredient(inputValue)} className="bg-green-950 text-white p-2 rounded md:ml-2 w-full md:w-44 cursor-pointer outline-none">Agregar</button>

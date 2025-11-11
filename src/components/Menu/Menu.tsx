@@ -23,7 +23,7 @@ export default function Menu() {
       <nav className="flex items-center w-full bg-green-900 sticky">
         <div className="sm:p-2 md:p-4">
           <Link to="/">
-          <h1 className="text-2xl ml-2 text-white font-bold">QuinoWraps</h1>
+          <h1 className="text-2xl ml-2 text-white font-bold">Quinowraps</h1>
           </Link>
         </div>
         <button
